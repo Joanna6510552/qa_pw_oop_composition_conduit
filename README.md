@@ -1,6 +1,6 @@
-# OOP & Composition for Conduit test project
+# OOP & Composition for Conduit Test Project
 
-## Table of contents
+## Table of Contents
 
 - [Description](#description)
 - [Preparation](#preparation)
@@ -9,24 +9,24 @@
 
 ## Description
 
+In this task, you'll practice creating reusable components and using Object-Oriented Programming (OOP). 
+You'll create components for:
 
-In this task, you will get more practice creating reusable components and using OOP. 
-You will create components for the Conduit `ExternalHomePage`:
+- Conduit `ExternalHomePage`:
 
 ![external home page](https://github.com/mate-academy/qa_pw_oop_composition_conduit/blob/main/ExternalHome.png) 
 
-and for the `InternalHomePage`:
+- `InternalHomePage`:
 
 ![internal home page](https://github.com/mate-academy/qa_pw_oop_composition_conduit/blob/main/InternalHome.png) 
 
-Also for the `ExternalViewArticlePage`:
+- `ExternalViewArticlePage`:
 
 ![external view article page](https://github.com/mate-academy/qa_pw_oop_composition_conduit/blob/main/ExternalViewArticlePage.png) 
 
-and the `InternalViewArticlePage`:
+- `InternalViewArticlePage`:
 
 ![internal view article page](https://github.com/mate-academy/qa_pw_oop_composition_conduit/blob/main/InternalViewArticlePage.png) 
-
 
 ## Preparation
 
@@ -37,40 +37,39 @@ and the `InternalViewArticlePage`:
     - `npm ci`
     - `npx playwright install`
 
-
 ## Main Task
 
 1. Write new tests for the [Conduit](https://conduit.mate.academy/) site: 
-- *Logged-in user can view own article in the Global Feed section*;
-- *Logged-in user can find own article by Tag from the Popular tags section and view in the Tag' Feed*;
-- *Not logged in user can view the article created by other user in the Global Feed section*;
-- *Not logged in user can open the article page created by other user from the Global Feed section*;
+- A logged-in user can view their own article in the **Global Feed** section.
+- A logged-in user can find their own article by tag from the **Popular Tags** section and view it in the **Tag Feed**.
+- A non-logged-in user can view articles created by other users in the **Global Feed** section.
+- A non-logged-in user can open an article page created by other users from the **Global Feed** section.
 
-2. To write these tests work with the components and base pages:
+2. To write these tests, work with the components and base pages:
 * 2.1 
-- create component `PopularTags`;
-- initialize component  `PopularTags` in the `BaseHomePage` class;
+- Create a component named `PopularTags`.
+- Initialize the `PopularTags` component in the `BaseHomePage` class.
 * 2.2 
-- create component `ArticleListItem`;
-- initialize the `ArticleFeedItem` in the `Popular Feeds` class;
-- initialize the `ArticleFeedItem` in the `Global Feeds` class;
+- Create a component named `ArticleListItem`.
+- Initialize the `ArticleFeedItem` component in the `Popular Feeds` class.
+- Initialize the `ArticleFeedItem` component in the `Global Feeds` class.
 * 2.3
-- create component `TagFeed`;
-- initialize `TagFeed` in the `ExternalHomePage`;
-- initialize `TagFeed` in the `InternalHomePage`;
+- Create a component named `TagFeed`.
+- Initialize the `TagFeed` component in the `ExternalHomePage`.
+- Initialize the `TagFeed` component in the `InternalHomePage`.
 * 2.4
-- create page `BaseViewArticlePage`;
-- extend `ExternalViewArticlePage` and `InternalViewArticlePage` pages from the `BaseViewArticlePage`;
+- Create a page named `BaseViewArticlePage`.
+- Extend the `ExternalViewArticlePage` and `InternalViewArticlePage` pages from the `BaseViewArticlePage`.
 * 2.5
-- create the `BaseViewArticleBlock` component;
-- extend the `ExternalViewArticleBlock` and `InternalViewArticleBlock` from the `BaseViewArticleBlock` component  
-- initialize `InternalViewArticleBlock` component within the `InternalViewArticlePage` constructor;
-- initialize `ExternalViewArticleBlock` component within the `ExternalViewArticlePage` constructor;
-3. Run all the tests and make sure they are passing.
+- Create a component named `BaseViewArticleBlock`.
+- Extend the `ExternalViewArticleBlock` and `InternalViewArticleBlock` from the `BaseViewArticleBlock` component.
+- Initialize the `InternalViewArticleBlock` component within the `InternalViewArticlePage` constructor.
+- Initialize the `ExternalViewArticleBlock` component within the `ExternalViewArticlePage` constructor.
+3. Run all tests and make sure they pass.
 
 ## Task Reporting
 
 1. Add and commit all your updates.
 2. Push the code to the origin.
 3. Create a PR for your changes.
-4. Keep implementing suggestions from code review until your PR is approved.
+4. Keep implementing suggestions from the code review until your PR is approved.
